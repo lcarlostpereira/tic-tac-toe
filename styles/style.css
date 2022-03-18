@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  text-align: center;
+  overflow: hidden;
+}
+h1 {
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+#round {
+  font-size: 40px;
+  font-weight: bold;
+}
+.turn {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.square {
+  width: 180px;
+  height: 180px;
+  background-color: beige;
+  border: 1px solid grey;
+  display: inline-block;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 1em grey;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.placar {
+  font-size: 30px;
+}
+#score1,
+#score2 {
+  color: black;
+}
+#player_1,
+#player_2 {
+  margin: 4px;
+  margin-top: 60%;
+}
+.o {
+  position: relative;
+  cursor: pointer;
+}
+
+.o:after {
+  position: absolute;
+  content: '\1F6E1';
+  font-size: 90px;
+  line-height: 180px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.x {
+  position: relative;
+}
+
+.x:after {
+  position: absolute;
+  content: '\2694';
+  font-size: 90px;
+  line-height: 180px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgb(53, 53, 197);
+  cursor: pointer;
+}
+
+#contact {
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.developBy {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.social {
+  width: 40px;
+}
+
+@media screen and (max-width: 980px) {
+  .square {
+    width: 120px;
+    height: 120px;
+  }
+
+  .o:after {
+    font-size: 60px;
+    line-height: 120px;
+  }
+  .x:after {
+    font-size: 60px;
+    line-height: 120px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  .placar,
+  #round {
+    font-size: 23px;
+  }
+  #player_1,
+  #player_2 {
+    margin-top: 45%;
+  }
+
+  button {
+    font-size: 15px;
+  }
+  #contact {
+    margin-top: 15px;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+  }
+  .social {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .square {
+    width: 90px;
+    height: 90px;
+  }
+
+  .o:after {
+    font-size: 45px;
+    line-height: 90px;
+  }
+  .x:after {
+    font-size: 45px;
+    line-height: 90px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+  .placar {
+    font-size: 15px;
+  }
+
+  #round {
+    font-size: 20px;
+  }
+  #player_1,
+  #player_2 {
+    margin-top: 65%;
+  }
+
+  #contact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .developBy {
+    font-size: 15px;
+  }
+  .social {
+    width: 30px;
+  }
+}

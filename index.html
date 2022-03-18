@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <title>Jogo da Velha</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="placar">
+        <h2 id="player_1">Player 1</h2>
+        <h3>Score</h3>
+        <span id="score1">00</span>
+      </div>
+
+      <div class="stage">
+        <h1>JOGO DA VELHA</h1>
+        <div class="turn">
+          <span id="round">Player 1 jogando...</span>
+        </div>
+        <div>
+          <div id="0" class="square"></div>
+          <div id="1" class="square"></div>
+          <div id="2" class="square"></div>
+        </div>
+        <!--linha 1-->
+
+        <div>
+          <div id="3" class="square"></div>
+          <div id="4" class="square"></div>
+          <div id="5" class="square"></div>
+        </div>
+        <!--linha 2-->
+
+        <div>
+          <div id="6" class="square"></div>
+          <div id="7" class="square"></div>
+          <div id="8" class="square"></div>
+        </div>
+        <!--linha 3-->
+
+        <button onclick="reset()">RESET</button>
+      </div>
+      <!--Stage-->
+
+      <div class="placar">
+        <h2 id="player_2">Player 2</h2>
+        <h3>Score</h3>
+        <span id="score2">00</span>
+      </div>
+    </div>
+    <!--Container-->
+    <div class="developBy">
+      <span>Developed by Luiz Carlos Pereira</span>
+    </div>
+    <div id="contact">
+      <a href="https://www.linkedin.com/in/luizcarlos-pereira/" target="_blank">
+        <img class="social" src="./assets/icons/linkedin.svg " />
+      </a>
+
+      <a href="https://github.com/lcarlostpereira" target="_blank">
+        <img class="social" src="./assets/icons/github.svg " />
+      </a>
+    </div>
+
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/interface.js"></script>
+  </body>
+</html>
