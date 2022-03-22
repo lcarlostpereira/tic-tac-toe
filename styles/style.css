@@ -194,3 +194,48 @@ button {
     width: 30px;
   }
 }
+@media screen and (max-width: 480px) {
+  .square {
+    width: 70px;
+    height: 70px;
+  }
+
+  .o:after {
+    font-size: 35px;
+    line-height: 70px;
+  }
+  .x:after {
+    font-size: 35px;
+    line-height: 70px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+
+  .placar {
+    font-size: 10px;
+  }
+
+  #round {
+    font-size: 15px;
+  }
+  #player_1,
+  #player_2 {
+    margin-top: 33%;
+  }
+
+  button {
+    font-size: 10px;
+  }
+  #contact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .developBy {
+    font-size: 10px;
+  }
+  .social {
+    width: 15px;
+  }
+}
